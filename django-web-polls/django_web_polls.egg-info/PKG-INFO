@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: django-web-polls
+Version: 0.2
+Summary: A simple packages app to conduct Web-based polls
+Home-page: UNKNOWN
+Author: Ryan Febriansyah
+Author-email: 15523163@students.uii.ac.id
+License: BSD License
+Description: ===== Web Based Polls Application =====
+        
+        
+        A simple application or libraries that useful to take a vote for Web-based polls.
+        
+        
+        
+        ===== Getting Started =====
+        
+        1. Add "polls" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'polls',
+            ]
+        
+        2. Include the polls URLconf in your project urls.py like this::
+        
+            path('polls/', include('polls.urls')),
+        
+        3. Run `python manage.py migrate` to create the polls models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+           to create a poll (you'll need the Admin app enabled).
+        
+        5. Go to http://127.0.0.1:8000/polls/ to participate in the poll.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
