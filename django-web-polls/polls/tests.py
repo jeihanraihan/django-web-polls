@@ -1,9 +1,10 @@
 import datetime
 from django.utils import timezone
 from django.test import TestCase
-from . models import Question
 from django.urls import reverse
+from . models import Question
 # Create your tests here.
+
 class QuestionModelTest(TestCase):
     def test_was_published_recently(self):
         time = timezone.now() + datetime.timedelta(days=30)
