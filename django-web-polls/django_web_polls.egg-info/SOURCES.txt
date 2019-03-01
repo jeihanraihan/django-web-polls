@@ -14,7 +14,8 @@ polls/tests.py
 polls/urls.py
 polls/views.py
 polls/migrations/0001_initial.py
-polls/migrations/__init__.py
 polls/templates/polls/details.html
 polls/templates/polls/index.html
 polls/templates/polls/results.html
+testapp/__init__.py
+testapp/test_settings.py
