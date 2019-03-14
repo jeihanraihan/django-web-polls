@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, Http404, HttpResponseRedirect
+from django.http import HttpResponse, Http404, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
-from . models import Question, Choice
+from . models import Question, Choice, Vote
 # Create your views here.
 
 class IndexView(generic.ListView):
@@ -54,3 +54,20 @@ def vote(request, question_id):
 """def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/results.html', {'question' : question})"""
+
+def question_list(request):
+    #pass
+    MAX_OBJECTS = 10
+    question = Question.objects.all()[:MAX_OBJECTS]
+    data = {'results': list(question.values('question_text', 'pub_date'))}
+    return JsonResponse(data)
+
+
+def question_details(request, pk):
+    #pass
+    question = get_object_or_404(Question, pk=pk)
+    data = {'results' : {
+        'question' : question.question,
+        'pub_date' : question.pub_date,
+    }}
+    return JsonResponse(data)
