@@ -1,4 +1,6 @@
 # Django Web Polls
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls?ref=badge_shield)
+
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls?ref=badge_shield)
 
@@ -27,3 +29,6 @@ go to Python prompt and enter the command like this :
 # License
 
 BSD 3
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls?ref=badge_large)
