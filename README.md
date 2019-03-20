@@ -1,7 +1,5 @@
 # Django Web Polls
 
-![Travis (.org) branch](https://img.shields.io/travis/encode/django-rest-framework/master.svg)
-
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsodrooome%2Fdjango-web-polls?ref=badge_shield)
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django.svg)
