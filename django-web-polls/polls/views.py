@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
 from . models import Question, Choice, Vote
+from . serializers import QuestionSerializer, ChoiceSerializer
 # Create your views here.
 
 class IndexView(generic.ListView):
@@ -71,3 +72,13 @@ def question_details(request, pk):
         'pub_date' : question.pub_date,
     }}
     return JsonResponse(data)
+
+class QuestionListView(generic.ListView):
+
+    get_queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
+
+class ChoiceDetailView(generic.DetailView):
+
+    get_queryset = Choice.objects.all()
+    serializer_class = ChoiceSerializer
